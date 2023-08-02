@@ -1,0 +1,10 @@
+App que calcula automaticamente a distribuição da renda baseado na regra 50/20/30.
+
+50% - DESPESAS FIXAS
+30% - INVESTIMENTOS E RESERVA DE EMERGÊNCIA
+20% - GASTOS FLEXÍVEIS
+
+O usuário insere o valor total de sua renda
+O programa calcula quanto deve ir para cada categoria
+O programa retorna ao usuário o valor destinado para cada categoria
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Gerenciador Financeiro - Método 50/30/20</title>
+		<link rel="stylesheet" href="style.css" />
+		<!-- Adicione o link para a biblioteca Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		/>
+	</head>
+	<body>
+		<header>
+			<h1><i class="fas fa-money-check-alt"></i> Gerenciador Financeiro</h1>
+		</header>
+		<main>
+			<div class="info-container">
+				<section>
+					<h2><i class="fas fa-hand-holding-usd"></i> Renda Total</h2>
+					<label for="rendaTotal">Insira sua renda mensal:</label>
+					<input type="number" id="rendaTotal" name="rendaTotal" required />
+					<button id="calcular">Calcular</button>
+				</section>
+				<section id="resultado" style="display: none">
+					<h2><i class="fas fa-chart-pie"></i> Divisão da Renda</h2>
+					<div>
+						<label for="necessidades"
+							><i class="fas fa-home"></i> Gastos Fixos:</label
+						>
+						<input type="text" id="necessidades" name="necessidades" disabled />
+					</div>
+					<div>
+						<label for="despesasPessoais"
+							><i class="fas fa-piggy-bank"></i> Investimentos e Reserva:</label
+						>
+						<input
+							type="text"
+							id="despesasPessoais"
+							name="despesasPessoais"
+							disabled
+						/>
+					</div>
+					<div>
+						<label for="objetivosFinanceiros"
+							><i class="fas fa-gift"></i> Gastos Flexíveis:</label
+						>
+						<input
+							type="text"
+							id="objetivosFinanceiros"
+							name="objetivosFinanceiros"
+							disabled
+						/>
+					</div>
+				</section>
+			</div>
+			<div class="graph-container">
+				<canvas id="pieChart" width="400" height="400"></canvas>
+			</div>
+		</main>
+		<footer>
+			<p>&copy; 2023 Lacet - Todos os direitos reservados.</p>
+		</footer>
+		<script src="calc_script.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	</body>
+</html>
